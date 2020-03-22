@@ -1,3 +1,8 @@
+/**
+ * Date: 2019-08-11 13:30:12
+ * LastEditors: Aliver
+ * LastEditTime: 2019-09-18 00:03:27
+ */
 #include "subwindow.h"
 #include "ui_subwindow.h"
 
@@ -350,8 +355,7 @@ bool SubWindow::RealEndpoint(const QPointF &start, const QPointF &end, QPointF &
 void SubWindow::on_outFileButton_clicked()
 {
     QString filter = "All File (*.*)";
-//    QString file_name = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath(), filter);
-    QString file_name = QFileDialog::getOpenFileName(this, "Open a file", "F:\\ProfessionalCourse\\DataStructure\\FinalProject\\Floyd", filter);
+    QString file_name = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath(), filter);
 
     this->wirteFile(file_name);
     if (!file_name.isEmpty())

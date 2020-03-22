@@ -29,8 +29,7 @@ void MainWindow::fromSubWindow()
 void MainWindow::on_scanButton_clicked()
 {
     QString filter = "All File (*.*)";
-//    QString file_name = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath(), filter);
-    QString file_name = QFileDialog::getOpenFileName(this, "Open a file", "F:\\ProfessionalCourse\\DataStructure\\FinalProject\\Floyd", filter);
+    QString file_name = QFileDialog::getOpenFileName(this, "Open a file", QDir::homePath(), filter);
     ui->lineEdit->setText(file_name);
 }
 

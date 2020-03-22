@@ -39,9 +39,9 @@ namespace SortVisualization
             this.AddItemsToCanvas();
             this.myView.PrepareRecords();
 
-            this.WholeTimer.Interval = TimeSpan.FromSeconds(0.4);
-            this.SwapTimer.Interval = TimeSpan.FromSeconds(0.03);
-            this.MoveTimer.Interval = TimeSpan.FromSeconds(0.02);
+            this.WholeTimer.Interval = TimeSpan.FromSeconds(0.1);
+            this.SwapTimer.Interval = TimeSpan.FromSeconds(0.01);
+            this.MoveTimer.Interval = TimeSpan.FromSeconds(0.01);
             this.WholeTimer.Tick += WholeTimer_Tick;
             this.SwapTimer.Tick += SwapTimer_Tick;
             this.MoveTimer.Tick += MoveTimer_Tick;
